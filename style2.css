@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #161623;
+}
+
+body::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#f00, #f0f);
+	clip-path: circle(30% at right 70%);
+	z-index: 1;
+}
+body::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#2196f3, #e91e63);
+	clip-path: circle(20% at 10% 10%);
+	z-index: 1;
+}
+
+.container
+{
+	position: absolute;
+	z-index: 3;
+}
+
+.container .imgBx .bx1 img
+{
+	width: 30%;
+	height: 30%;
+	display: block;
+	margin:auto;
+	margin-bottom: 20px;
+	margin-top: -40px;
+}
+
+.container .buttonbx .logbtn
+{
+	display: block;
+	color:whitesmoke;
+	font-size: 26px;
+	font-weight: 600;
+	margin:auto;
+	margin-top: 40px;
+	padding: 15px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-radius: 5px;
+	background-color: rgb(153, 0, 255);
+	border: 1px solid rgb(153, 0, 255);
+}
+
+.container .buttonbx .logbtn:hover
+{
+	transition: 0.2s;
+	border: 1px solid rgb(76, 0, 255);
+	background-color: rgb(76, 0, 255);
+}
+
+
+/* ------------------ RESPONSIVE ------------------- */
+@media screen 
+  and (min-device-width: 650px) 
+  and (max-device-width: 1000px) 
+{
+	.container .imgBx .bx1 .bxx1
+	{
+		width: 60%;
+		height: 60%;
+		/* margin-bottom: 60px; */
+	} 
+	.container .buttonbx .logbtn
+	{
+		font-size: 30px;
+		margin-top: 40px;
+		padding: 15px;
+		padding-left: 60px;
+		padding-right: 60px;
+		border-radius: 10px;
+	}
+}
+
+@media screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 650px) 
+  /* and (min-device-height: 450px) 
+  and (max-device-height: 1100px)  */
+{
+	.container .imgBx .bx1 .bxx1
+	{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 60px;
+	} 
+	.container .imgBx .bx2 .bxx2
+	{	
+		width: 130%;
+		height: auto;
+		margin-left: -80px;
+	}
+	.container .buttonbx .logbtn
+	{
+		font-size: 55px;
+		margin-top: 60px;
+		padding: 20px;
+		padding-left: 80px;
+		padding-right: 80px;
+		border-radius: 15px;
+	}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GlassMorphism effect</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+    	<div class="container">
+
+            <div class="imgBx">
+                <div class="bx1"><img class="bxx1" src="bx1.png"></div>
+                <div class="bx2"><img class="bxx2" src="logo2.png"></div>
+            </div>
+            <div class="buttonbx">
+                <button class="logbtn">Log In</button>
+            </div>
+
+    	</div>
+
+    	<script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    	<script>
+            VanillaTilt.init(document.querySelectorAll(".bx1"),{
+            max: 50,
+            speed: 400,
+            // glare : true,
+            // "max-glare" : 1,
+            });
+			VanillaTilt.init(document.querySelectorAll(".bx2"),{
+			max: 50,
+			speed: 400,
+			// glare : true,
+			// "max-glare" : 1,
+			});
+		</script>
+
+    </body>
+</html>
